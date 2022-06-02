@@ -1,5 +1,5 @@
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
 __version__ = '0.0.3'
 
@@ -126,8 +126,8 @@ class Exercise3Utils:
         else:
             return np.array(out, dtype=np.float64)
 
-    @staticmethod
-    def classmethod(cls, plotData, theta, X, y, degree=6):
+    @classmethod
+    def plotDecisionBoundary(cls, plotData, theta, X, y, degree=6):
         # make sure theta is a numpy array
         theta = np.array(theta)
 
